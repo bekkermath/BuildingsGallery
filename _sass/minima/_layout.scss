@@ -1,0 +1,430 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-top: 5px solid $accent-color-light;
+  border-bottom: 1px solid $accent-color-light;
+  min-height: $spacing-unit * 1.865;
+  background-color: $accent-color-dark;
+  
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color: $accent-color-light;
+  &,
+  &:visited {
+    color: $accent-color-light;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+      display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $accent-color-light;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $accent-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: $accent-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+	  color: $accent-color-light;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $accent-color-light;
+  padding-top: $spacing-unit;
+  background-color: $accent-color-dark;
+  
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+  color: $accent-color-light;
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $accent-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $accent-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+.textbox {
+  margin: 0pt;
+  padding: 5pt;
+  margin-bottom: 10pt;
+  text-align: justify;
+}
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
+
+
+
+/**
+ * Generic use
+ */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/**
+ * WebGL
+ */
+//@extend-elements
+//original selectors
+//.webgl-content .logo, .progress
+%extend_2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%, -50%);
+}
+//original selectors
+//.webgl-content .footer .webgl-logo, .title, .fullscreen
+%extend_3 {
+	height: 100%;
+	display: inline-block;
+	background: transparent center no-repeat;
+}
+.webgl-content {
+	.logo {
+		@extend %extend_2;
+		background: url(/assets/unity/BuildingsGallery/TemplateData/progressLogo.Light.png) no-repeat center / contain;
+		width: 154px;
+		height: 130px;
+		&.Dark {
+			background-image: url(/assets/unity/BuildingsGallery/TemplateData/progressLogo.Dark.png);
+		}
+	}
+	.progress {
+		height: 18px;
+		width: 141px;
+		margin-top: 90px;
+		.empty {
+			background: url(/assets/unity/BuildingsGallery/TemplateData/progressEmpty.Light.png) no-repeat right / cover;
+			float: right;
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+		.full {
+			background: url(/assets/unity/BuildingsGallery/TemplateData/progressFull.Light.png) no-repeat left / cover;
+			float: left;
+			width: 0;
+			height: 100%;
+			display: inline-block;
+		}
+		&.Dark {
+			.empty {
+				background-image: url(/assets/unity/BuildingsGallery/TemplateData/progressEmpty.Dark.png);
+			}
+			.full {
+				background-image: url(/assets/unity/BuildingsGallery/TemplateData/progressFull.Dark.png);
+			}
+		}
+	}
+	.footer {
+		margin-top: 2px;
+		height: 40px;
+		line-height: 38px;
+		width: 100%;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+		font-size: 18px;
+		.webgl-logo {
+			@extend %extend_3;
+			background-image: url(/assets/unity/BuildingsGallery/TemplateData/webgl-logo.png);
+			width: 204px;
+			float: left;
+		}
+		.title {
+			margin-right: 10px;
+			float: right;
+		}
+		.fullscreen {
+			background-image: url(/assets/unity/BuildingsGallery/TemplateData/fullscreen.png);
+			width: 38px;
+			float: right;
+		}
+	}
+}
+.progress {
+	@extend %extend_2;
+}
+.title {
+	@extend %extend_3;
+}
+.fullscreen {
+	@extend %extend_3;
+}
+
+
+
+/**
+ * tabcontrol
+ */
+ul {
+	&.tabcontrol.tabs {
+		margin: 0;
+		height: 29px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		border-bottom: 1px solid $accent-color-light;
+		li {
+			&.tab {
+				float: left;
+				padding: 3px 5px;
+				cursor: pointer;
+				list-style-type: none;
+				border: 1px solid $accent-color-light;
+				border-bottom: none;
+				//Instead of the line below you could use @include box-sizing($bs)
+				box-sizing: border-box;
+				height: 28px;
+				margin-right: 2px;
+				font-size: 17pt !important;
+				line-height: 100% !important;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 2px 2px 0 0;
+				background-color: $background-color;
+				}
+			&.tabcontrol.tab {
+				&.active {
+					height: 32px;
+					font-weight: bold !important;
+					margin-top: -3px;
+					border-top: 3px solid $accent-color-dark;
+					border-bottom: none;
+				}
+				&:first-child {
+					border-left: 1px solid  $accent-color-light;
+					margin-left: 0;
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+div.tabcontrol.body {
+	padding: 10px;
+	line-height: 135%;
+	&.fullborder {
+		border: 1px solid  $accent-color-light;
+		border-top: none;
+		padding: 10px;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	ul:last-child {
+		margin-bottom: 0;
+	}
+}

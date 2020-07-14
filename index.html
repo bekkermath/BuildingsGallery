@@ -1,30 +1,21 @@
 ---
 layout: default
-title: The Buildings Gallery
+title: Home
 unity_dir: BuildingsGallery
 ---
-<div class="blurb">	
-	This website hosts the Buildings Gallery web application, which will continuously be developed.</br></br>
-	
-	The buildings of type A2 belong to the groups SL(3,F), type A3 to SL(4,F). For spherical, buildings
-	indicated with the prefix Sph, F is the field of order two. The affine building, indicated with the prefix
-	Aff, F is the 2-adic field (or actually the rationals with the 2-adic valuation).</br></br>
-	
-	The building admits an action by its respective group such that the fundamental chamber is stabilized by
-	the standard Borel subgroup. Each chamber is stabilised by a conjugate of the standard Borel subgroup,
-	given by a canonical element of the form "u s". Here "u" is a product of unitary upper triangular matrices
-	and "s" is a permutation matrix, presented in term of the simple reflections s1, s2 and s3.
-	Other simplices, e.g. lines and points, correspond to unions of these Borel subgroups, and thus the buildings
-	show the entire structure of the parabolic subgroups of each group.
-	(Formally all of this happens over an algebraic group, but ofcourse we can only show F-points here).</br></br>
-	
-	Rotate the view with the left mouse button, zoom with the scroll wheel and drag the camera by clicking and dragging
-	the middle mouse button/scroll button. Vertices can be dragged with left click (although they have a small
-	hitbox).</br></br>
-	
-	Combinatorial n-spheres around the fundamental chamber are displayed by the different colours. The fundamental
-	apartment is opaque. Change the radius up to which the chambers are displayed with the slider. Hovering over a
-	chamber displays the canonical representative element for the stabilizer of the chamber.</br></br>
-	
-	If you are experience performance issues, reduce the display radius of the building.
-</div><!-- /.blurb -->
+
+<div class="textbox">
+	Rotate the view with the left mouse button, zoom with the scroll wheel or alt + left mouse button, and pan by clicking and dragging
+	the mright mouse button. Vertices can be dragged with left click.</br></br>
+
+	Change the radius up to which the chambers are displayed with the slider. Hovering over a chamber displays the canonical representative element for the stabiliser of the chamber. This is an element of the group such that the stabiliser of the chamber is conjugate to the stabiliser of the fundamental chamber by this element. It consists of a sequence of elements of the form $u(i,j)(k)$ followed by a sequence of simple reflections, the $s_i$. An element $u(i,j)(k)$ is a unipotent matrix with value $k$ on position $(i,j)$ (so over the standard basis $E_{i,j}$ of the space of invertible matrices we have: $u(i,j)(k) = I + kE_{i,j}$).</br></br>
+
+	If you are experiencing performance issues, reduce the display radius of the building.
+</div>
+
+{% include page__unity.html %}
+
+
+{% include tabcontrol.html bodyclass="fullborder" tabs=site.data.tabs id="foo" %}
+
+

@@ -1,12 +1,13 @@
 <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/TemplateData/UnityProgress.js"></script>  
 <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/Build/UnityLoader.js"></script>
+
 <script>
-  var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl}}/assets/unity/{{page.unity_dir}}/Build/BuildingsWebApp.json",{onProgress: UnityProgress});  
+  var unityInstance = UnityLoader.instantiate("unityContainer", "{{ site.baseurl}}/assets/unity/{{page.unity_dir}}/Build/TheBuildingsGallery.json",{onProgress: UnityProgress});
 </script>
+
 <div class="webgl-content">
-	    <div id="unityContainer" style="width: 100%; height: 600px"></div>
-			<div class="footer">
-				<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-			</div>
-		</div>
+  <div id="unityContainer" style="width: 100%; height: 600px"></div>
+  <div class="footer">
+	<div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+  </div>
 </div>

@@ -1,0 +1,143 @@
+tab1:
+  name: SphA2
+  title: SphA2
+  source: sourceSA2
+  active: 1
+  content: |
+    A spherical building of type A<sub>2</sub>.
+    
+    <table>
+      <tr>
+        <td>Represented group:</td>
+        <td>$\text{GL}_3(F_2)$ or $\text{SL}_3(F_2)$, with $F_2$ the field of order 2.</td>
+      </tr>
+      <tr>
+        <td>Stabiliser of the fundamental chamber:</td>
+        <td>
+          $$B = \left\{
+          \begin{pmatrix}\nonumber
+            *&*&*\\
+            0&*&*\\
+            0&0&*
+          \end{pmatrix}
+          \right\}$$
+        </td>
+      </tr>
+      <tr>
+        <td>Simple reflections:</td>
+        <td>
+            $s_0 =  \begin{pmatrix}\nonumber
+                      0&1&0\\
+                      1&0&0\\
+                      0&0&1
+                    \end{pmatrix}$
+                
+            $s_1 =  \begin{pmatrix}\nonumber
+                      1&0&0\\
+                      0&0&1\\
+                      0&1&0
+                    \end{pmatrix}$          
+        </td>
+      </tr>
+    </table>
+    
+tab2:
+  name: SphA3
+  title: SphA3
+  source: sourceSA3
+  content: |
+    A spherical building of type A<sub>3</sub>.
+    
+    <table>
+      <tr>
+        <td>Represented group:</td>
+        <td>$\text{GL}_4(F_2)$ or $\text{SL}_4(F_2)$, with $F_2$ the field of order 2.</td>
+      </tr>
+      <tr>
+        <td>Stabiliser of the fundamental chamber:</td>
+        <td>
+          $$B = \left\{
+          \begin{pmatrix}\nonumber
+            *&*&*&*\\
+            0&*&*&*\\
+            0&0&*&*\\
+            0&0&0&*
+          \end{pmatrix}
+          \right\}$$
+        </td>
+      </tr>
+      <tr>
+        <td>Simple reflections:</td>
+        <td>
+          $s_0 =\begin{pmatrix}\nonumber
+                  0&1&0&0\\
+                  1&0&0&0\\
+                  0&0&1&0\\
+                  0&0&0&1
+                \end{pmatrix}$
+          $s_1 =\begin{pmatrix}\nonumber
+                  1&0&0&0\\
+                  0&0&1&0\\
+                  0&1&0&0\\
+                  0&0&0&1
+                \end{pmatrix}$
+                
+          $s_2 =\begin{pmatrix}\nonumber
+                  1&0&0&0\\
+                  0&1&0&0\\
+                  0&0&0&1\\
+                  0&0&1&0
+                \end{pmatrix}$
+        </td>
+      </tr>
+    </table>
+    
+tab3:
+  name: AffA2
+  title: AffA2
+  source: sourceAA2
+  content: |
+    An affine building of type Ã<sub>2</sub>.
+    
+    <table>
+      <tr>
+        <td>Represented group:</td>
+        <td>$\text{GL}_3(\mathbb{Q}_2)$ or $\text{SL}_3(\mathbb{Q}_2)$, with $\mathbb{Q}_2$ the field of 2-adic numbers.</td>
+      </tr>
+      <tr>
+        <td>Stabiliser of the fundamental chamber:</td>
+        <td>
+          $$B = \left\{
+          \begin{pmatrix}\nonumber
+            \nu=0   &\nu\geq0   &\nu\geq0\\
+            \nu\geq1&\nu=0      &\nu\geq0\\
+            \nu\geq1&\nu\geq1   &\nu=0
+          \end{pmatrix}
+          \right\}$$
+          where $\nu$ is the 2-adic valuation.
+        </td>
+      </tr>
+      <tr>
+        <td>Simple reflections:</td>
+        <td>
+          $s_0 =\begin{pmatrix}\nonumber
+                  0&1&0\\
+                  1&0&0\\
+                  0&0&1
+                \end{pmatrix}$
+          
+          $s_1 =\begin{pmatrix}\nonumber
+                  1&0&0\\
+                  0&0&1\\
+                  0&1&0
+                \end{pmatrix}$
+          
+          $s_2 =\begin{pmatrix}\nonumber
+                  0       &0  &-\varpi^{-1}\\
+                  0       &1  &0\\
+                  \varpi  &0  &0
+                \end{pmatrix}$
+        </td>
+      </tr>
+    </table>
+    
