@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This website hosts the Buildings Gallery web application.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buildings.gallery" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: UA-172751310-1
 twitter_username: 
 github_username:  betabetaalpha
 # Build settings
