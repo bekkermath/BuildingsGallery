@@ -137,6 +137,7 @@ tab3:
                   0       &1  &0\\
                   \varpi  &0  &0
                 \end{pmatrix}$
+                Here, $\varpi$ is a choice of uniformizer of $\mathbb{Q}_2$.
         </td>
       </tr>
     </table>
