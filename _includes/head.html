@@ -27,6 +27,11 @@
         processEscapes: true
       }
     });
+	
+  <!-- include google analytics -->
+  <!-- {%- if jekyll.environment == 'production' and site.google_analytics -%}
+		 {%- include google-analytics.html -%}
+		{%- endif -%} --> <!-- do not include until cookie banner installed -->
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
