@@ -1,8 +1,18 @@
 tab1:
+  name: Controls
+  title: Controls
+  source: sourceControls
+  active: 1
+  content: |
+    Rotate the view with the left mouse button, zoom with the scroll wheel or alt + left mouse button, and pan by clicking and dragging the right mouse button. Vertices can be dragged with left click. Change the radius up to which the chambers are displayed with the slider. Hovering over a chamber displays the canonical representative element for the stabiliser of the chamber.
+    
+    If you are experiencing performance issues, reduce the display radius of the building.
+    
+
+tab2:
   name: SphA2
   title: SphA2
   source: sourceSA2
-  active: 1
   content: |
     A spherical building of type A<sub>2</sub>.
     
@@ -41,7 +51,7 @@ tab1:
       </tr>
     </table>
     
-tab2:
+tab3:
   name: SphA3
   title: SphA3
   source: sourceSA3
@@ -92,7 +102,7 @@ tab2:
       </tr>
     </table>
     
-tab3:
+tab4:
   name: AffA2
   title: AffA2
   source: sourceAA2
